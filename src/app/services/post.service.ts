@@ -23,10 +23,10 @@ import {Post} from'../models/post';
       }
     
       public updatePost(post: Post): Observable<unknown> {
-        return this.http.put(`ttps://localhost:44321/RaceHorse`, post);
+        return this.http.put(`https://localhost:44342/Post`, post);
       }
     
       public deletePost(id: number): Observable<unknown> {
-        return this.http.delete(`https://localhost:44321/RaceHorse/${id}`);
+        return this.http.delete(`https://localhost:44342/Post/${id}`);
       }
     }
